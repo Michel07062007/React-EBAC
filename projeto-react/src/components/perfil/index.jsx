@@ -1,7 +1,6 @@
 import './perfil.css'
 
 const Perfil = ({ endereco, nome }) => {
-    const {endereco, nome} = props
     return (
         <div>
             <img className='perfil-avatar' src={props.endereco}/>
