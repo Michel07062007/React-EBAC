@@ -2,7 +2,7 @@ import { use, useState } from "react";
 
 import Perfil from "./components/perfil";
 import Formulario from "./components/formulario";
-import ReposList from "./components/RepoList/inde";
+import ReposList from "./components/RepoList";
 
 
 function App() {

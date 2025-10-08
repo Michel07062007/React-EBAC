@@ -6,7 +6,7 @@ const ReposList = ({ nomeUsuario }) => {
     const {repos ,setRepos} = useState([]);
     const [estaCarregando, setEstaCarregando] = useState('');
 
-    useEffect(() => (
+    useEffect(() => {
         setEstaCarregando(true);
         fetch(`https://api.github.com/users/${nomeUsuario}/repos`)
         .then(res => res.json())
@@ -16,7 +16,7 @@ const ReposList = ({ nomeUsuario }) => {
                 setRepos(resJson);
             }, 3000)
         })
-    ), [nomeUsuario]);
+    }, [nomeUsuario]);
 
     return (
         <div className="container">
